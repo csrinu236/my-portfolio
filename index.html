@@ -23,6 +23,7 @@
       href="./favicon_io//favicon-16x16.png"
     />
     <link rel="manifest" href="./favicon_io//site.webmanifest" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/main.css" />
@@ -105,12 +106,12 @@
           <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
-      <div class="main-img-container">
+      <div class="main-img-container" data-aos="fade-left">
         <img src="./css/main-img.jpg" alt="" />
       </div>
     </div>
     <!------- about -->
-    <section class="section about">
+    <section data-aos="fade-right" class="section about">
       <div class="section-center about-center">
         <div class="about-img-container">
           <img src="./css/main-img-2.jpg" alt="" />
@@ -143,7 +144,7 @@
       </div>
       <div class="section-center services-center">
         <!-- single item -->
-        <article class="service">
+        <article data-aos="zoom-in" class="service">
           <span><i class="fab fa-sass"></i></span>
           <div class="section-title">
             <h4>HTML&Sass</h4>
@@ -157,20 +158,23 @@
         </article>
         <!-- end of  single item -->
         <!-- single item -->
-        <article class="service">
+        <article data-aos="zoom-in" class="service">
           <span><i class="fab fa-react"></i></span>
           <div class="section-title">
             <h4>react js</h4>
             <div class="underline"></div>
           </div>
           <p class="service-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
-            voluptatibus voluptate eius
+            I am currently doing Udemy course on react js. In which I loved is
+            using Redux toolkit. Redux toolkit is like omnitrix to react js. It
+            single handedly defeated 1) useContextAPI (which avoids props
+            drilling) and 2) useReduer(jam all useState variables in a single
+            state).
           </p>
         </article>
         <!-- end of  single item -->
         <!-- single item -->
-        <article class="service">
+        <article data-aos="zoom-in" class="service">
           <span><i class="fab fa-node-js"></i></span>
           <div class="section-title">
             <h4>Node JS</h4>
@@ -188,20 +192,15 @@
     </section>
     <section class="section projects">
       <div class="section-title">
-        <h2 class="tc">Latest Works</h2>
+        <h2 class="tc">Books</h2>
         <div class="underline"></div>
       </div>
       <p class="project-text">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit
-        aspernatur hic unde doloribus ipsa non corporis doloremque totam quidem!
-        Quam, ab amet officia cum aspernatur inventore voluptatum ipsa veniam
-        ratione. aspernatur hic unde doloribus ipsa non corporis doloremque
-        totam quidem! Quam, ab amet officia cum aspernatur inventore voluptatum
-        ipsa veniam ratione.
+        Economics rule 101: Supply of money creates un-neccessary demand.
       </p>
       <div class="section-center projects-center">
         <!-- single item -->
-        <a href="projects.html" class="project-1">
+        <a href="projects.html" class="project-1" data-aos="fade-right">
           <div class="project-img-container">
             <img src="./css/laptop-14.jpg" class="project-img height-100" />
             <div class="project-info">
@@ -212,7 +211,7 @@
         </a>
         <!-- end of single item -->
         <!-- single item -->
-        <a href="projects.html" class="project-2">
+        <a href="projects.html" class="project-2" data-aos="fade-right">
           <div class="project-img-container">
             <img src="./css/laptop-2.jpg" class="project-img" />
             <div class="project-info">
@@ -223,7 +222,7 @@
         </a>
         <!-- end of single item -->
         <!-- single item -->
-        <a href="projects.html" class="project-3">
+        <a href="projects.html" class="project-3" data-aos="fade-left">
           <div class="project-img-container">
             <img src="./css/laptop-3.jpg" class="project-img" />
             <div class="project-info">
@@ -234,7 +233,7 @@
         </a>
         <!-- end of single item -->
         <!-- single item -->
-        <a href="projects.html" class="project-4">
+        <a href="projects.html" class="project-4" data-aos="fade-left">
           <div class="project-img-container">
             <img src="./css/laptop-4.jpg" class="project-img" />
             <div class="project-info">
@@ -246,177 +245,25 @@
         <!-- end of single item -->
       </div>
     </section>
-    <section class="contact">
+    <section class="books">
       <video loop autoplay muted class="video-container">
         <source src="./css/main-video-2.mp4" />
       </video>
       <div class="overlay"></div>
-      <div class="contact-info">
+      <div class="books-info">
         <div class="section-title">
-          <h3>let's get in touch</h3>
+          <h3>I'm book reader</h3>
           <div class="underline"></div>
         </div>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut molestias,
-          voluptatem vero adipisci unde beatae cupiditate ipsa deleniti
-          obcaecati nam! Quisquam vitae facere earum. Nemo quisquam at iure
-          molestiae soluta?
+          Book reading is a very good habit. I often read lifestyle books,
+          finance books. I have many books in my shelf like Rich Dad Poor Dad,
+          Atomic Habits, Deep Work, etc. Financial books really enlightened my
+          financial goals.
         </p>
-        <a href="contact.html" class="btn">contact me</a>
       </div>
     </section>
 
-    <section class="section skills">
-      <div class="section-title">
-        <h2 class="tc">skills</h2>
-        <div class="underline"></div>
-      </div>
-      <div class="section-center skills-center">
-        <!-- front end  -->
-        <div class="front-end">
-          <h3 class="mb-2">Front End</h3>
-          <!-- single skill -->
-          <div class="single-skill">
-            <p class="skill-name">HTML/CSS</p>
-            <div class="skill-bar">
-              <div class="skill-value value-50"></div>
-              <p class="value left-50">50</p>
-            </div>
-          </div>
-          <!-- end of single skill -->
-          <!-- single skill -->
-          <div class="single-skill">
-            <p class="skill-name">Javascript</p>
-            <div class="skill-bar">
-              <div class="skill-value value-70"></div>
-              <p class="value left-70">70</p>
-            </div>
-          </div>
-          <!-- end of single skill -->
-          <!-- single skill -->
-          <div class="single-skill">
-            <p class="skill-name">React JS</p>
-            <div class="skill-bar">
-              <div class="skill-value value-80"></div>
-              <p class="value left-80">80</p>
-            </div>
-          </div>
-          <!-- end of single skill -->
-        </div>
-        <!-- back end  -->
-        <div class="front-end">
-          <h3 class="mb-2">Back end</h3>
-          <!-- single skill -->
-          <div class="single-skill">
-            <p class="skill-name">Node JS</p>
-            <div class="skill-bar">
-              <div class="skill-value value-50"></div>
-              <p class="value left-50">50</p>
-            </div>
-          </div>
-          <!-- end of single skill -->
-          <!-- single skill -->
-          <div class="single-skill">
-            <p class="skill-name">PHP</p>
-            <div class="skill-bar">
-              <div class="skill-value value-70"></div>
-              <p class="value left-70">70</p>
-            </div>
-          </div>
-          <!-- end of single skill -->
-          <!-- single skill -->
-          <div class="single-skill">
-            <p class="skill-name">Python</p>
-            <div class="skill-bar">
-              <div class="skill-value value-80"></div>
-              <p class="value left-80">80</p>
-            </div>
-          </div>
-          <!-- end of single skill -->
-        </div>
-      </div>
-    </section>
-
-    <section class="section timeline">
-      <div class="section-title">
-        <h2 class="tc">time line</h2>
-        <div class="underline"></div>
-      </div>
-      <div class="timeline-center">
-        <!-- single timeline -->
-        <article>
-          <h4></h4>
-          <p class="mb-0">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-            recusandae, et dignissimos voluptatem aut maxime! Dolores
-            necessitatibus facilis cupiditate recusandae, et dignissimos
-            voluptatem aut maxime! Dolores necessitatibus facilis cupiditate
-          </p>
-          <div class="number">5</div>
-        </article>
-        <!-- end of single timeline -->
-        <!-- single timeline -->
-        <article>
-          <h4></h4>
-          <p class="mb-0">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-            recusandae, et dignissimos voluptatem aut maxime! Dolores
-            necessitatibus facilis cupiditate recusandae, et dignissimos
-            voluptatem aut maxime! Dolores necessitatibus facilis cupiditate
-          </p>
-          <div class="number">5</div>
-        </article>
-        <!-- end of single timeline -->
-        <!-- single timeline -->
-        <article>
-          <h4></h4>
-          <p class="mb-0">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-            recusandae, et dignissimos voluptatem aut maxime! Dolores
-            necessitatibus facilis cupiditate recusandae, et dignissimos
-            voluptatem aut maxime! Dolores necessitatibus facilis cupiditate
-          </p>
-          <div class="number">5</div>
-        </article>
-        <!-- end of single timeline -->
-        <!-- single timeline -->
-        <article>
-          <h4></h4>
-          <p class="mb-0">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-            recusandae, et dignissimos voluptatem aut maxime! Dolores
-            necessitatibus facilis cupiditate recusandae, et dignissimos
-            voluptatem aut maxime! Dolores necessitatibus facilis cupiditate
-          </p>
-          <div class="number">5</div>
-        </article>
-        <!-- end of single timeline -->
-        <!-- single timeline -->
-        <article>
-          <h4></h4>
-          <p class="mb-0">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-            recusandae, et dignissimos voluptatem aut maxime! Dolores
-            necessitatibus facilis cupiditate recusandae, et dignissimos
-            voluptatem aut maxime! Dolores necessitatibus facilis cupiditate
-          </p>
-          <div class="number">5</div>
-        </article>
-        <!-- end of single timeline -->
-        <!-- single timeline -->
-        <article>
-          <h4></h4>
-          <p class="mb-0">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-            recusandae, et dignissimos voluptatem aut maxime! Dolores
-            necessitatibus facilis cupiditate recusandae, et dignissimos
-            voluptatem aut maxime! Dolores necessitatibus facilis cupiditate
-          </p>
-          <div class="number">5</div>
-        </article>
-        <!-- end of single timeline -->
-      </div>
-    </section>
     <section class="section blogs">
       <div class="section-title">
         <h2 class="tc">blogs</h2>
@@ -433,18 +280,13 @@
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Corporis est esse, impedit consectetur officia quisquam ratione
                 accusantium aliquam veritatis id beatae repellat error nostrum
-                quod tempore minima facilis mollitia, alias a dolor perspiciatis
-                maiores? Placeat repellendus necessitatibus molestias deleniti
-                repellat!
+                quod tempore minima.
               </p>
               <div class="blog-footer">
                 <img src="./css/main-img.jpg" alt="" />
-                <p class="mb-0">7 min read</p>
+                <a href="about.html" class="btn">read more</a>
               </div>
             </div>
-          </div>
-          <div class="single-blog-back">
-            <a href="about.html" class="btn">read more</a>
           </div>
         </article>
         <!-- end of single blog -->
@@ -458,18 +300,13 @@
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Corporis est esse, impedit consectetur officia quisquam ratione
                 accusantium aliquam veritatis id beatae repellat error nostrum
-                quod tempore minima facilis mollitia, alias a dolor perspiciatis
-                maiores? Placeat repellendus necessitatibus molestias deleniti
-                repellat!
+                quod tempore minima.
               </p>
               <div class="blog-footer">
                 <img src="./css/main-img.jpg" alt="" />
-                <p class="mb-0">7 min read</p>
+                <a href="about.html" class="btn">read more</a>
               </div>
             </div>
-          </div>
-          <div class="single-blog-back">
-            <a href="about.html" class="btn">read more</a>
           </div>
         </article>
         <!-- end of single blog -->
@@ -483,18 +320,13 @@
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Corporis est esse, impedit consectetur officia quisquam ratione
                 accusantium aliquam veritatis id beatae repellat error nostrum
-                quod tempore minima facilis mollitia, alias a dolor perspiciatis
-                maiores? Placeat repellendus necessitatibus molestias deleniti
-                repellat!
+                quod tempore minima.
               </p>
               <div class="blog-footer">
                 <img src="./css/main-img.jpg" alt="" />
-                <p class="mb-0">7 min read</p>
+                <a href="about.html" class="btn">read more</a>
               </div>
             </div>
-          </div>
-          <div class="single-blog-back">
-            <a href="about.html" class="btn">read more</a>
           </div>
         </article>
         <!-- end of single blog -->
@@ -508,18 +340,13 @@
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Corporis est esse, impedit consectetur officia quisquam ratione
                 accusantium aliquam veritatis id beatae repellat error nostrum
-                quod tempore minima facilis mollitia, alias a dolor perspiciatis
-                maiores? Placeat repellendus necessitatibus molestias deleniti
-                repellat!
+                quod tempore minima.
               </p>
               <div class="blog-footer">
                 <img src="./css/main-img.jpg" alt="" />
-                <p class="mb-0">7 min read</p>
+                <a href="about.html" class="btn">read more</a>
               </div>
             </div>
-          </div>
-          <div class="single-blog-back">
-            <a href="about.html" class="btn">read more</a>
           </div>
         </article>
         <!-- end of single blog -->
@@ -556,6 +383,13 @@
       };
 
       var typed = new Typed(".element", options);
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        useClassNames: true,
+      });
     </script>
   </body>
 </html>
