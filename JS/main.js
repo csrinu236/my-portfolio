@@ -1,12 +1,28 @@
 const navbar = document.querySelector(".navbar");
-const sideBar = document.querySelector(".side-bar");
-const closeBtn = document.querySelector(".close-btn");
+const navLinks = document.querySelectorAll(".nav-links a");
 const navBtn = document.querySelector(".nav-btn");
 const date = document.getElementById("date");
+const linksContainer = document.querySelector(".links-container");
+console.log(linksContainer);
+const links = document.querySelector(".nav-links");
 
 const year = new Date().getFullYear();
 date.textContent = year;
 // numbers.reverse();
+
+navBtn.addEventListener("click", () => {
+  const linksHeight = links.getBoundingClientRect().height;
+  const linksContainerHeight = linksContainer.getBoundingClientRect().height;
+  if (linksContainerHeight === 0) {
+    linksContainer.style.height = linksHeight + "px";
+  } else {
+    linksContainer.style.height = 0;
+  }
+});
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => (linksContainer.style.height = 0));
+});
 
 window.addEventListener("scroll", function () {
   const height = this.window.pageYOffset;
@@ -15,11 +31,4 @@ window.addEventListener("scroll", function () {
   } else {
     navbar.classList.remove("fixed-nav");
   }
-});
-
-closeBtn.addEventListener("click", function () {
-  sideBar.classList.remove("show-sidebar");
-});
-navBtn.addEventListener("click", function () {
-  sideBar.classList.add("show-sidebar");
 });
