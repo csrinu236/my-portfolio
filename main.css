@@ -496,7 +496,7 @@ projects
   border-radius: var(--radius);
 }
 .project-img-container:hover .project-img {
-  opacity: 0.1;
+  opacity: 0.2;
 }
 
 .project-img-container::before {
