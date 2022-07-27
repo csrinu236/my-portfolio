@@ -25,8 +25,8 @@
     <link rel="manifest" href="./favicon_io//site.webmanifest" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="main.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
@@ -41,16 +41,19 @@
         </div>
         <ul class="nav-links">
           <li>
-            <a href="index.html">home</a>
+            <a href="#main">home</a>
           </li>
           <li>
-            <a href="about.html">about</a>
+            <a href="#about">about</a>
           </li>
           <li>
-            <a href="projects.html">projects</a>
+            <a href="#skills">skills</a>
           </li>
           <li>
-            <a href="contact.html">contact</a>
+            <a href="#books">books</a>
+          </li>
+          <li>
+            <a href="#projects">projects</a>
           </li>
         </ul>
       </div>
@@ -60,16 +63,16 @@
       <div>
         <ul class="sidebar-links mb-2">
           <li>
-            <a href="index.html">home</a>
+            <a href="#">home</a>
           </li>
           <li>
-            <a href="about.html">about</a>
+            <a href="#">about</a>
           </li>
           <li>
-            <a href="projects.html">projects</a>
+            <a href="#">projects</a>
           </li>
           <li>
-            <a href="contact.html">contact</a>
+            <a href="#">contact</a>
           </li>
         </ul>
         <div class="social-icons">
@@ -87,12 +90,13 @@
         </div>
       </div>
     </section>
-    <div class="main">
+    <div id="main" class="main">
       <div class="main-info mb-3">
         <div class="underline ml-0 mb-1"></div>
         <h1 class="mb-1">Hi, I'm <span class="element"></span></h1>
-        <a href="about.html" class="btn mb-3">hire me</a>
-        <div class="social-icons">
+        <a href="#" class="btn mb-3">hire me</a>
+
+        <div class="social-icons mb-2">
           <a href="https://www.facebook.com/srinu.chenna.140"
             ><i class="fab fa-facebook"></i
           ></a>
@@ -111,46 +115,47 @@
       </div>
     </div>
     <!------- about -->
-    <section data-aos="fade-right" class="section about">
+    <section data-aos="fade-right" class="section about" id="about">
       <div class="section-center about-center">
         <div class="about-img-container">
-          <img src="./css/main-img-2.jpg" alt="" />
+          <img src="./css/main-img.jpg" alt="" />
         </div>
         <div class="about-info">
           <div class="section-title">
             <h2>about</h2>
             <div class="underline ml-0"></div>
           </div>
+          <p>I am not a Smart person, but a Consistent learner.</p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-            cupiditate laborum eligendi sapiente tenetur illum, cum expedita
-            officia distinctio minus nam, animi commodi enim, aliquam obcaecati
-            laboriosam earum dignissimos voluptatibus?
+            My name is Chenna Sreenu. I completed my Bachelors degree in
+            Agriculture and Food Engineering in 2022 at IIT Kharagpur. My home
+            town is Hyderabad, Telangana.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-            cupiditate laborum eligendi sapiente tenetur illum, cum expedita
-            officia distinctio minus nam, animi commodi enim, aliquam obcaecati
-            laboriosam earum dignissimos voluptatibus?
+            I am very much interested in web development. My aim is to become
+            professional full stack developer (MERN). I have hands on experience
+            of Udemy React & Node Projects. I am very much fond of buying
+            courses and completing them because investment on
+            education/knowledge gives the best CAGR in the long run.
           </p>
-          <a href="about.html" class="btn">about me</a>
+          <a href="#" class="btn">about me</a>
         </div>
       </div>
     </section>
-    <section class="section services">
+    <section class="section skills" id="skills">
       <div class="section-title">
         <h2>My skills</h2>
         <div class="underline"></div>
       </div>
-      <div class="section-center services-center">
+      <div class="section-center skills-center">
         <!-- single item -->
-        <article data-aos="zoom-in" class="service">
+        <article data-aos="zoom-in" class="skill">
           <span><i class="fab fa-sass"></i></span>
           <div class="section-title">
             <h4>HTML&Sass</h4>
             <div class="underline"></div>
           </div>
-          <p class="service-text">
+          <p class="skill-text">
             I have been practising HTML-CSS for almost 1 year, recently switched
             to Sass. Sass is awesome css libray with which we can style our apps
             in less time with more efficiency.
@@ -158,39 +163,40 @@
         </article>
         <!-- end of  single item -->
         <!-- single item -->
-        <article data-aos="zoom-in" class="service">
+        <article data-aos="zoom-in" class="skill">
           <span><i class="fab fa-react"></i></span>
           <div class="section-title">
             <h4>react js</h4>
             <div class="underline"></div>
           </div>
-          <p class="service-text">
-            I am currently doing Udemy course on react js. In which I loved is
-            using Redux toolkit. Redux toolkit is like omnitrix to react js. It
+          <p class="skill-text">
+            I am currently doing Udemy course on reactJs in which I really loved
+            using Redux toolkit. Redux toolkit is like omnitrix to reactJs. It,
             single handedly defeated 1) useContextAPI (which avoids props
-            drilling) and 2) useReduer(jam all useState variables in a single
-            state).
+            drilling) and 2) useReduer(which jam all useState variables in a
+            single state).
           </p>
         </article>
         <!-- end of  single item -->
         <!-- single item -->
-        <article data-aos="zoom-in" class="service">
+        <article data-aos="zoom-in" class="skill">
           <span><i class="fab fa-node-js"></i></span>
           <div class="section-title">
             <h4>Node JS</h4>
             <div class="underline"></div>
           </div>
-          <p class="service-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
-            voluptatibus voluptate eius architecto doloremque commodi eos nemo
-            id cupiditate veritatis explicabo mollitia nulla temporibus
-            molestiae quod
+          <p class="skill-text">
+            I am also doing Udemy course on nodeJs along with react. NodeJs is
+            just a run time environment. Express js is the library by which we
+            make APIs for front end. In expressJs, I really loved the concept of
+            middleware. Middleware is the heart of nodeJs where it pumps many
+            things across multiple routes.
           </p>
         </article>
         <!-- end of  single item -->
       </div>
     </section>
-    <section class="section projects">
+    <section class="section projects" id="books">
       <div class="section-title">
         <h2 class="tc">Books</h2>
         <div class="underline"></div>
@@ -200,78 +206,74 @@
       </p>
       <div class="section-center projects-center">
         <!-- single item -->
-        <a href="projects.html" class="project-1" data-aos="fade-right">
+        <a href="#" class="project-1" data-aos="fade-right">
           <div class="project-img-container">
-            <img src="./css/laptop-14.jpg" class="project-img height-100" />
+            <img src="./css/deepwork.jpeg" class="project-img height-100" />
             <div class="project-info">
-              <h4>project title</h4>
-              <p>client name</p>
+              <h4>Deep Work</h4>
             </div>
           </div>
         </a>
         <!-- end of single item -->
         <!-- single item -->
-        <a href="projects.html" class="project-2" data-aos="fade-right">
+        <a href="#" class="project-2" data-aos="fade-right">
           <div class="project-img-container">
-            <img src="./css/laptop-2.jpg" class="project-img" />
+            <img src="./css/atomichabits.png" class="project-img" />
             <div class="project-info">
-              <h4>project title</h4>
-              <p>client name</p>
+              <h4>Atomic Habits</h4>
             </div>
           </div>
         </a>
         <!-- end of single item -->
         <!-- single item -->
-        <a href="projects.html" class="project-3" data-aos="fade-left">
+        <a href="#" class="project-3" data-aos="fade-left">
           <div class="project-img-container">
-            <img src="./css/laptop-3.jpg" class="project-img" />
+            <img src="./css/psychologyofmoney.jpeg" class="project-img" />
             <div class="project-info">
-              <h4>project title</h4>
-              <p>client name</p>
+              <h4>psychology of money</h4>
             </div>
           </div>
         </a>
         <!-- end of single item -->
         <!-- single item -->
-        <a href="projects.html" class="project-4" data-aos="fade-left">
+        <a href="#" class="project-4" data-aos="fade-left">
           <div class="project-img-container">
-            <img src="./css/laptop-4.jpg" class="project-img" />
+            <img src="./css/richdadpoordad.png" class="project-img" />
             <div class="project-info">
-              <h4>project title</h4>
-              <p>client name</p>
+              <h4>Rich Dad Poor Dad</h4>
             </div>
           </div>
         </a>
         <!-- end of single item -->
       </div>
     </section>
-    <section class="books">
+    <section class="hobby">
       <video loop autoplay muted class="video-container">
         <source src="./css/main-video-2.mp4" />
       </video>
       <div class="overlay"></div>
-      <div class="books-info">
+      <div class="hobby-info" data-aos="zoom-out">
         <div class="section-title">
           <h3>I'm book reader</h3>
           <div class="underline"></div>
         </div>
         <p>
-          Book reading is a very good habit. I often read lifestyle books,
+          Book reading is a very good habit. I often read self-help books,
           finance books. I have many books in my shelf like Rich Dad Poor Dad,
-          Atomic Habits, Deep Work, etc. Financial books really enlightened my
-          financial goals.
+          Atomic Habits, Deep Work, etc. Financial books really enlightened me
+          to have better financial goals.
         </p>
       </div>
     </section>
 
-    <section class="section blogs">
+    <section class="section blogs" id="projects">
       <div class="section-title">
-        <h2 class="tc">blogs</h2>
+        <h2 class="tc">Projects</h2>
         <div class="underline"></div>
       </div>
       <div class="section-center blogs-center">
         <!-- single blog -->
-        <article class="single-blog">
+        <article class="single-blog" data-aos="zoom-in">
           <div class="single-blog-front">
             <img src="./css/laptop-14.jpg" alt="" />
             <div class="blog-info">
@@ -284,67 +286,7 @@
               </p>
               <div class="blog-footer">
                 <img src="./css/main-img.jpg" alt="" />
-                <a href="about.html" class="btn">read more</a>
-              </div>
-            </div>
-          </div>
-        </article>
-        <!-- end of single blog -->
-        <!-- single blog -->
-        <article class="single-blog">
-          <div class="single-blog-front">
-            <img src="./css/laptop-2.jpg" alt="" />
-            <div class="blog-info">
-              <h4>article title</h4>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Corporis est esse, impedit consectetur officia quisquam ratione
-                accusantium aliquam veritatis id beatae repellat error nostrum
-                quod tempore minima.
-              </p>
-              <div class="blog-footer">
-                <img src="./css/main-img.jpg" alt="" />
-                <a href="about.html" class="btn">read more</a>
-              </div>
-            </div>
-          </div>
-        </article>
-        <!-- end of single blog -->
-        <!-- single blog -->
-        <article class="single-blog">
-          <div class="single-blog-front">
-            <img src="./css/laptop-3.jpg" alt="" />
-            <div class="blog-info">
-              <h4>article title</h4>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Corporis est esse, impedit consectetur officia quisquam ratione
-                accusantium aliquam veritatis id beatae repellat error nostrum
-                quod tempore minima.
-              </p>
-              <div class="blog-footer">
-                <img src="./css/main-img.jpg" alt="" />
-                <a href="about.html" class="btn">read more</a>
-              </div>
-            </div>
-          </div>
-        </article>
-        <!-- end of single blog -->
-        <!-- single blog -->
-        <article class="single-blog">
-          <div class="single-blog-front">
-            <img src="./css/laptop-4.jpg" alt="" />
-            <div class="blog-info">
-              <h4>article title</h4>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Corporis est esse, impedit consectetur officia quisquam ratione
-                accusantium aliquam veritatis id beatae repellat error nostrum
-                quod tempore minima.
-              </p>
-              <div class="blog-footer">
-                <img src="./css/main-img.jpg" alt="" />
-                <a href="about.html" class="btn">read more</a>
+                <a href="#" class="btn">read more</a>
               </div>
             </div>
           </div>
@@ -362,7 +304,7 @@
         <a href="#"><i class="fab fa-instagram"></i></a>
       </div>
       <h4 class="mb-0">
-        copy &copy; <span id="date"></span>, Sreenu Chenna, all rights reserved
+        copy &copy; <span id="date"></span>, Chenna, all rights reserved
       </h4>
     </section>
 

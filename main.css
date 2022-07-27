@@ -53,7 +53,9 @@ Variables
 Global Styles
 ===============
 */
-
+html {
+  scroll-behavior: smooth;
+}
 *,
 ::after,
 ::before {
@@ -273,7 +275,7 @@ Navbar
     padding: 0.5rem 1rem;
     border-radius: 0.75rem;
 
-    margin: 0 0.5rem;
+    margin: 0 0.25rem;
 
     /* font-weight: 600; */
   }
@@ -442,26 +444,26 @@ About
 
 /*
 ===========================================================================
-services
+skills
 ===========================================================================
 */
 
-.services-center {
+.skills-center {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
 }
-.services {
+.skills {
   background: var(--clr-grey-10);
 }
-.services .section-title {
+.skills .section-title {
   text-align: center;
 }
-.service .underline {
+.skill .underline {
   height: 0.15rem;
   transition: var(--transition);
 }
-.service {
+.skill {
   text-align: center;
   border-radius: var(--radius);
   background: var(--clr-white);
@@ -469,24 +471,24 @@ services
   padding: 2rem;
   transition: var(--transition);
 }
-.service span {
+.skill span {
   font-size: 2rem;
   margin-bottom: 1.5rem;
   display: inline-block;
 }
-.service:hover {
+.skill:hover {
   box-shadow: var(--dark-shadow);
   color: var(--clr-white);
   background-color: var(--clr-primary-5);
 }
-.service:hover .underline {
+.skill:hover .underline {
   background-color: var(--clr-white);
 }
-.service-text {
+.skill-text {
   transition: var(--transition);
   text-align: justify;
 }
-.service:hover .service-text {
+.skill:hover .skill-text {
   color: var(--clr-white);
 }
 .tc {
@@ -607,7 +609,7 @@ projects
 books
 ===========================================================================
 */
-.books {
+.hobby {
   position: relative;
   min-height: 90vh;
   display: grid;
@@ -633,7 +635,7 @@ books
   opacity: 0.5;
   z-index: -1;
 }
-.books-info {
+.hobby-info {
   background: var(--clr-primary-10);
   width: 85vw;
   max-width: 600px;
