@@ -235,13 +235,15 @@ Navbar
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  /* width: 100vw; */
+  right: 0;
   z-index: 2;
 }
 
 .nav-center {
   margin: 0 auto;
   max-width: 1170px;
+  padding: 0;
 }
 
 .nav-header {
@@ -250,9 +252,9 @@ Navbar
   align-items: center;
   padding: 1rem;
 }
-.nav-links {
+/* .nav-links {
   display: grid;
-}
+} */
 
 .links-container {
   height: 0;
